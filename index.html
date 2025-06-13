@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamBeans Coffee Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f3f0;
+      color: #333;
+    }
+    header, footer {
+      background-color: #6b4f3b;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #6b4f3b;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+    }
+    form input, form textarea, form select {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DreamBeans Coffee Shop</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservation">Reservation</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to DreamBeans, your cozy neighborhood coffee retreat. We serve ethically sourced coffee, delicious snacks, and warm smiles every day.</p>
+      <img src="https://st2.depositphotos.com/1875497/6137/i/450/depositphotos_61375725-stock-photo-coffee-mug-in-coffee-shop.jpg" alt="Coffee Shop Image">
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Espresso</td>
+            <td>Strong and bold shot of coffee</td>
+            <td>2.50</td>
+          </tr>
+          <tr>
+            <td>Latte</td>
+            <td>Espresso with steamed oat milk</td>
+            <td>3.50</td>
+          </tr>
+          <tr>
+            <td>Mocha</td>
+            <td>Chocolate-flavored coffee with oat milk</td>
+            <td>3.75</td>
+          </tr>
+          <tr>
+            <td>Blueberry Muffin</td>
+            <td>Fresh baked muffin with real blueberries</td>
+            <td>2.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="reservation">
+      <h2>Reserve a Table</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required>
+
+        <label for="guests">Number of Guests:</label>
+        <select id="guests">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4+</option>
+        </select>
+
+        <label for="message">Special Requests:</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button type="submit">Submit Reservation</button>
+      </form>
+    </section>
+
+    
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 DreamBeans Coffee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
